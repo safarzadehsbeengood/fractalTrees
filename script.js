@@ -11,7 +11,7 @@ function draw() {
     background(10);
     stroke(255);
     translate(width / 2, height);
-    branch(height / 4);
+    branch(height / 3);
 }
 
 function branch(len) {
