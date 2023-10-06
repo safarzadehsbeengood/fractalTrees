@@ -8,8 +8,8 @@ function setup() {
 }
 
 function draw() {
-    background(10);
-    stroke(255);
+    background(255);
+    stroke(0);
     translate(width / 2, height);
     branch(height / 3);
 }
