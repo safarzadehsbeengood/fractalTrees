@@ -19,7 +19,7 @@ function branch(len) {
     translate(0, -len);
     angle = slider.value();
     
-    if (len > 4) {
+    if (len > (height / 100)) {
         push();
         rotate(angle);
         branch(len * 0.67);
