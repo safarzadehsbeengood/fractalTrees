@@ -1,16 +1,17 @@
-let height = 600;
-let width = 600;
+let height = window.innerHeight - 100;
+let width = window.innerWidth;
 
 function setup() {
-    createCanvas(height, width);
+    createCanvas(width, height);
     slider = createSlider(0, TWO_PI, PI / 4, 0.01);
+    slider.style('width', '100%');
 }
 
 function draw() {
-    background(100);
+    background(10);
     stroke(255);
     translate(width / 2, height);
-    branch(150);
+    branch(height / 4);
 }
 
 function branch(len) {
@@ -18,7 +19,7 @@ function branch(len) {
     translate(0, -len);
     angle = slider.value();
     
-    if (len > 3) {
+    if (len > 4) {
         push();
         rotate(angle);
         branch(len * 0.67);
