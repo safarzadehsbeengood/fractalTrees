@@ -1,14 +1,11 @@
-
-#home {
-    padding: 4px;
-    text-align: center;
-    color: white;
-    font-family: 'Space Mono', monospace;
-    position: absolute;
-    text-decoration: none;
+.home:hover {
+    background: rgba(128, 128, 128, 0.459);
 }
-  
-#home:hover {
-    background: rgba(128, 128, 128, 0.356);
+
+#home-btn:hover {
     cursor: pointer;
+}
+
+.home:active {
+    background: rgba(114, 114, 114, 0.541);
 }
